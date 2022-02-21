@@ -11,7 +11,7 @@
   
   <title>
     
-      关于 
+      archive_a: 2022/1 
       
       
       |
@@ -106,51 +106,57 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
 
-<!-- LaTex Display -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
+<!-- last: 按年份把文章分组，当前遍历到的年份 -->
+<!-- now: 当前遍历到的文章的发布年份 -->
 
-
-
-  
-
-  
-
-  
-  <!-- 关于页 url形式：https://yoursite/about/ -->
-    <div class="container about-index">
-      <div class="markdown-body">
-        <h5 id="博客历程"><a href="#博客历程" class="headerlink" title="博客历程"></a>博客历程</h5><ol>
-<li><code>2020.07.15</code> 正式上线 <code>hexo+githubpage+picgo</code></li>
-<li><code>2020.07.24 </code>  注册域名<code>lucknote.top</code> </li>
-<li><code>2020.11.10</code> 域名备案完成，<code>nginx+hexo</code> 同时绑定阿里云<code>ssl</code>证书</li>
-<li><code>2021.04.22</code>  域名过期，注销备案</li>
-<li><code>2021.05.01 </code>  阿里云<code>ecs</code>服务器过期，备份数据至本地，下线</li>
-<li><code>2022.02.18</code>  重新上线，腾讯云轻量服务器 <code>hexo+githubpage</code></li>
-</ol>
-<h5 id="更新历程"><a href="#更新历程" class="headerlink" title="更新历程"></a>更新历程</h5><ol>
-<li>17岁的学生时代博客就上线，用以记录学习历程，时间线拉长后加上嫌排版配图麻烦就少有更新了。</li>
-<li>工作后一堆琐事缠身，域名过期后便彻底遗弃了，学习笔记也差不多停滞不前了（主要是太懒，不想动笔）。</li>
-<li>为什么又重新上线？规整碎片化信息，将隐性信息进行显性，养成开笔思考的能力。换种说法就是，”即使当勉励，岁月不待人”。</li>
-</ol>
-
+<div class="container archives">
+  <div class="post-list">
+    
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2022</span>
+          </h2>
+        </div>
+      
+      <div class="post-item" title="送东阳马生序">
+        <div class="time-m-d">02-21</div>
+        <div class="title">
+          <a href="/2022/02/21/%E9%80%81%E4%B8%9C%E9%98%B3%E9%A9%AC%E7%94%9F%E5%BA%8F/">
+            <span>送东阳马生序</span>
+          </a>
+        </div>
       </div>
-    </div>
-  
-
-  
+    
+      <div class="post-item" title="2021年度总结">
+        <div class="time-m-d">01-06</div>
+        <div class="title">
+          <a href="/2022/01/06/2021%E6%80%BB%E7%BB%93/">
+            <span>2021年度总结</span>
+          </a>
+        </div>
+      </div>
+    
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2020</span>
+          </h2>
+        </div>
+      
+      <div class="post-item" title="Python+Scapy实现TCP端口扫描">
+        <div class="time-m-d">09-15</div>
+        <div class="title">
+          <a href="/2020/09/15/Python+Scapy_%E5%AE%9E%E7%8E%B0TCP%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F/">
+            <span>Python+Scapy实现TCP端口扫描</span>
+          </a>
+        </div>
+      </div>
+    
+  </div>
+</div>
 
         <div class="footer">
   <div class="social">
@@ -407,24 +413,6 @@ MathJax = {
 
 
         
-  
-    <div class="share-icon tools-bar-item">
-      <a href="javascript: void(0)" id="share-icon">
-        <i class="iconfont iconshare"></i>
-      </a>
-      <div class="share-content hidden">
-        
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + about + '&url=' + http%3A%2F%2Fexample.com%2Fabout%2Findex.html + '" target="_blank" title="Twitter">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        
-        
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/about/index.html" target="_blank" title="Facebook">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        
-      </div>
-    </div>
   
   
 <script src="/js/shares.js"></script>
